@@ -2,9 +2,9 @@
 
 ## 📖 Overview
 
-This repository presents a technical debt analysis of the Checkstyle open-source project using **SonarQube**.
+This repository presents a technical debt analysis of the **Checkstyle** open-source project using **SonarQube**.
 
-The project evaluates software quality by analyzing maintainability, reliability, security, code smells, technical debt, and test coverage. Based on the findings, improvement opportunities and refactoring recommendations are discussed.
+The analysis focuses on software quality by evaluating maintainability, reliability, security, code smells, technical debt, and test coverage. Based on the findings, refactoring strategies are proposed to improve the overall quality of the project.
 
 ---
 
@@ -12,9 +12,9 @@ The project evaluates software quality by analyzing maintainability, reliability
 
 - Analyze technical debt using SonarQube
 - Evaluate software quality metrics
-- Identify maintainability and reliability issues
-- Detect code smells and security vulnerabilities
-- Recommend refactoring strategies
+- Identify maintainability, reliability, and security issues
+- Detect code smells
+- Recommend refactoring strategies to reduce technical debt
 
 ---
 
@@ -26,26 +26,29 @@ The project evaluates software quality by analyzing maintainability, reliability
 
 ---
 
-## 📊 Analysis Summary
+## 📊 Technical Debt Summary
 
 | Metric | Result |
 |---------|--------|
+| Technical Debt | 8 Days |
+| Debt Ratio | ≤ 5% |
 | Total Issues | 162 |
 | Code Smells | 144 |
 | Bugs | 16 |
 | Security Issues | 2 |
-| Technical Debt | 8 Days |
-| Test Coverage | 0% |
+| Test Coverage | 0.0% |
+| Code Duplication | 1.7% |
 
 ---
 
 ## 🔍 Key Findings
 
 - High Cognitive Complexity
-- Large Number of Code Smells
+- God Classes
 - Maintainability Issues
 - Security Vulnerabilities
 - Missing Test Coverage
+- Low Code Duplication
 
 ---
 
@@ -53,9 +56,11 @@ The project evaluates software quality by analyzing maintainability, reliability
 
 - Extract Method
 - Extract Class
-- Reduce Cognitive Complexity
+- Decompose Conditional
+- Dependency Injection
+- Characterization Testing
 - Increase Test Coverage
-- Improve Code Maintainability
+- Reduce Cognitive Complexity
 
 ---
 
@@ -63,6 +68,10 @@ The project evaluates software quality by analyzing maintainability, reliability
 
 ```text
 technical-debt-analysis-sonarqube/
+│
+├── README.md
+├── LICENSE
+├── .gitignore
 │
 └── report/
     └── Technical_Debt_Analysis_Report.pdf
@@ -72,7 +81,7 @@ technical-debt-analysis-sonarqube/
 
 ## 📄 Project Report
 
-The complete analysis report is available in the **report** folder.
+The complete project report is available in the **report** folder.
 
 ➡️ If GitHub cannot preview the PDF, simply download it and open it locally.
 
